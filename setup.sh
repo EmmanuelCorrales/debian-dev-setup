@@ -1,4 +1,4 @@
-apt-get install build-essentials
+apt-get install build-essential
 apt-get install git tmux vim
 
 # Initialize git submodules.
