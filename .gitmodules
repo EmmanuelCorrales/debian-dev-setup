@@ -1,0 +1,6 @@
+[submodule "jdk-ubuntu-setup"]
+	path = jdk-ubuntu-setup
+	url = git@github.com:EmmanuelCorrales/jdk-ubuntu-setup.git
+[submodule "vim-setup"]
+	path = vim-setup
+	url = git@github.com:EmmanuelCorrales/vim-setup.git
