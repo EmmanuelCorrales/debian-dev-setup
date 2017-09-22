@@ -18,6 +18,7 @@ cd vim-setup
 cd ..
 
 # Setup Java java development environment.
-# echo "Setting up JDK..."
-# cd jdk-ubuntu-setup
-# sh jdk8-u101-linux-x64.sh
+echo "Setting up JDK..."
+cd jdk-ubuntu-setup
+./jdk8-u101-linux-x64.sh
+cd ..
