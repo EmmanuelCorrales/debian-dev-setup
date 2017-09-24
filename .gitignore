@@ -4,3 +4,9 @@
 # Ignore vim files
 *.swp
 *.swo
+
+# Ignore debian installers
+*.deb*
+
+# Ignore compressed files
+*.tar.gz
