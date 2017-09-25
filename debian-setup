@@ -14,7 +14,7 @@ echo "Setting up Javascipt development environment..."
 # Setup vim.
 echo "Setting up vim config and plugins..."
 cd vim-setup
-./setup.sh
+./setup
 cd ..
 
 # Setup Java java development environment.
