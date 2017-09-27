@@ -14,3 +14,6 @@ nvm install --lts
 
 # Show currently installed Node.js version.
 node -v
+
+# Install typescript globally.
+npm -g install typescript
