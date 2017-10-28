@@ -11,6 +11,9 @@ git submodule update
 echo "Setting up Javascipt development environment..."
 ./javascript-setup
 
+# Setup Ruby on Rails.
+./RoR-setup
+
 # Setup vim.
 echo "Setting up vim config and plugins..."
 cd vim-setup
