@@ -14,12 +14,6 @@ echo "Setting up Javascipt development environment..."
 # Setup Ruby on Rails.
 ./RoR-setup
 
-# Setup vim.
-echo "Setting up vim config and plugins..."
-cd vim-setup
-./setup
-cd ..
-
 # Setup Java java development environment.
 echo "Setting up JDK..."
 cd jdk-ubuntu-setup

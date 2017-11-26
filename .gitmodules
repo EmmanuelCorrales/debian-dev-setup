@@ -1,6 +1,3 @@
-[submodule "vim-setup"]
-	path = vim-setup
-	url = https://github.com/EmmanuelCorrales/vim-setup.git
 [submodule "jdk-ubuntu-setup"]
 	path = jdk-ubuntu-setup
 	url = https://github.com/EmmanuelCorrales/jdk-ubuntu-setup.git
