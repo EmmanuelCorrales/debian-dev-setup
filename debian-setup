@@ -19,3 +19,6 @@ echo "Setting up JDK..."
 cd jdk-ubuntu-setup
 ./jdk8-u101-linux-x64.sh
 cd ..
+
+# Copy tmux config.
+cp .tmux.conf ~
