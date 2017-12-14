@@ -22,3 +22,6 @@ cd ..
 
 # Create a hard symlink to user's .tmux.conf file.
 ln -n .tmux.conf ~/.tmux.conf
+
+# Create a hard symlink to user's .bash_aliases file.
+ln -n .bash_aliases ~/.bash_aliases
