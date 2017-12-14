@@ -20,5 +20,5 @@ cd jdk-ubuntu-setup
 ./jdk8-u101-linux-x64.sh
 cd ..
 
-# Copy tmux config.
-cp .tmux.conf ~
+# Create a hard symlink to user's .tmux.conf file.
+ln -n .tmux.conf ~/.tmux.conf
