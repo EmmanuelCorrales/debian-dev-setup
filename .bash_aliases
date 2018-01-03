@@ -1,4 +1,4 @@
-jj='jobs'
+alias jj='jobs'
 
 # Run for safety reasons.
-rm='rm -i'
+alias rm='rm -i'
