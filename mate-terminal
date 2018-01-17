@@ -1,0 +1,17 @@
+#!/bin/bash
+git clone https://github.com/oz123/solarized-mate-terminal.git
+pushd solarized-mate-terminal
+./solarized-mate.sh dark
+popd
+rm -rf solarized-mate-terminal
+
+git clone https://github.com/seebi/dircolors-solarized.git
+pushd dircolors-solarized
+mv dircolors.ansi-dark ~/.dircolors
+popd
+rm -rf dircolors-solarized
+
+echo
+echo "#Solarized configuration." >> ~/.bashrc
+echo 'export TERM=xterm-256color        # for common 256 color terminals (e.g. gnome-terminal)' >> ~/.bashrc
+echo 'export TERM=screen-256color       # for a tmux -2 session (also for screen)' >> ~/.bashrc
