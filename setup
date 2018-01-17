@@ -1,10 +1,9 @@
 #!/bin/bash
-
 sudo apt-get install build-essential
 sudo apt-get install git tmux vim xclip
 
-# Create a hard symlink to user's .tmux.conf file.
+rm ~/.tmux.conf
 ln -n .tmux.conf ~/.tmux.conf
 
-# Create a hard symlink to user's .bash_aliases file.
+rm ~/.bash_aliases
 ln -n .bash_aliases ~/.bash_aliases
