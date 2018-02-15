@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get install build-essential
-sudo apt-get install git tmux vim xclip
+sudo apt-get install git tmux vim xclip tig
 
 rm ~/.tmux.conf
 ln -n .tmux.conf ~/.tmux.conf
