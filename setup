@@ -10,5 +10,8 @@ rm ~/.bash_aliases
 ln -n .bash_aliases ~/.bash_aliases
 
 echo "" >> ~/.bashrc
+echo "export EDITOR=vim" >> ~/.bashrc
+
+echo "" >> ~/.bashrc
 echo "export PS1='\$ '" >> ~/.bashrc
 echo "Restart to apply all changes."
