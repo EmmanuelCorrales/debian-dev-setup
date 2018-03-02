@@ -4,10 +4,10 @@ sudo apt-get install build-essential
 sudo apt-get install git tmux vim xclip tig
 
 rm ~/.tmux.conf
-ln -n .tmux.conf ~/.tmux.conf
+ln -n configs/.tmux.conf ~/.tmux.conf
 
 rm ~/.bash_aliases
-ln -n .bash_aliases ~/.bash_aliases
+ln -n configs/.bash_aliases ~/.bash_aliases
 
 echo "" >> ~/.bashrc
 echo "export EDITOR=vim" >> ~/.bashrc
