@@ -25,7 +25,3 @@ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt-get update && sudo apt-get install yarn
 yarn -v
-
-# Install create react app.
-echo "Installing create-react-app..."
-npm install -g create-react-app
