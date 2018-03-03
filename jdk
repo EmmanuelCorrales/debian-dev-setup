@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Add Oracle's PPA.
-add-apt-repository ppa:webupd8team/java
-apt-get update
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
 
 # Download and install Oracle JDK8 because it is the most stable.
-apt-get install oracle-java8-installer
+sudo apt-get install oracle-java8-installer
 
 # Setup this java as the default.
-apt-get install oracle-java8-set-default
+sudo apt-get install oracle-java8-set-default
 
 java -version
 javac -version
