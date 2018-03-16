@@ -16,4 +16,7 @@ echo "export REACT_EDITOR=vim" >> ~/.bashrc
 echo "" >> ~/.bashrc
 echo "export PS1='\[\e[32m\]#>\[\e[m\] '" >> ~/.bashrc
 
+echo "" >> ~/.bashrc
+echo "set -o vi" >> ~/.bashrc
+
 echo "Restart to apply all changes."
