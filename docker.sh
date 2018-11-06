@@ -17,5 +17,5 @@ sudo apt-get install docker-ce
 sudo docker run hello-world
 
 # Enable running docker without sudo.
-sudo usermod -G docker $USER
+sudo adduser $USER docker
 echo "Please logout then login again to use docker without sudo."
