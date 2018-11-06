@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # SETUP REPOSITORY
 sudo apt-get update
