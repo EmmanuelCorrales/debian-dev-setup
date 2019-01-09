@@ -17,7 +17,7 @@ DOTFILES_REPO=$HOME/.dotfiles
 DOTFILES_OLD=$HOME/.dotfiles.old/`date +"%m-%d-%y-%T"`
 
 [ -f $DOTFILES_REPO ] && rm -rf $DOTFILES_REPO
-git clone --bare https://github.com/EmmanuelCorrales/dotfiles.git $DOTFILES_REPO
+git clone --bare https://github.com/emcorrales/dotfiles.git $DOTFILES_REPO
 
 dotfiles() {
   git --git-dir=$DOTFILES_REPO --work-tree=$HOME $@
