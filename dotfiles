@@ -15,13 +15,18 @@ fi
 echo "Setting up dotfiles..."
 DOTFILES_REPO=$HOME/.dotfiles
 DOTFILES_OLD=$HOME/.dotfiles.old/`date +"%m-%d-%y-%T"`
-
-[ -f $DOTFILES_REPO ] && rm -rf $DOTFILES_REPO
-git clone --bare https://github.com/emcorrales/dotfiles.git $DOTFILES_REPO
-
 dotfiles() {
   git --git-dir=$DOTFILES_REPO --work-tree=$HOME $@
 }
+
+echo "Cleaning up previous dotfiles..."
+if [ -d $DOTFILES_REPO ]; then
+  cd $HOME
+  dotfiles ls-tree -r master --name-only | xargs -n1 rm
+  rm -rf $DOTFILES_REPO
+fi
+
+git clone --bare https://github.com/emcorrales/dotfiles.git $DOTFILES_REPO
 
 mkdir -p $DOTFILES_OLD
 dotfiles checkout
@@ -29,7 +34,7 @@ dotfiles checkout
 if [ $? = 0 ]; then
   echo "Checked out dotfiles.";
 else
-  echo "Backing up pre-existing dot files.";
+  echo "Backing up native dot files.";
   dotfiles checkout 2>&1 | grep -P "\t+" | awk {'print $1'} | xargs -I {} mv $HOME/{} $DOTFILES_OLD/
 fi;
 
