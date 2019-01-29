@@ -26,7 +26,7 @@ if [ -d $DOTFILES_REPO ]; then
   rm -rf $DOTFILES_REPO
 fi
 
-git clone --bare https://github.com/emcorrales/dotfiles.git $DOTFILES_REPO
+git clone --bare git@github.com:emcorrales/dotfiles.git $DOTFILES_REPO
 
 mkdir -p $DOTFILES_OLD
 dotfiles checkout
